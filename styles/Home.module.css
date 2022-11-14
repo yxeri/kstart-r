@@ -1,3 +1,27 @@
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.formList {
+  padding: 5%;
+  justify-content: space-between;
+  border: 1px solid gray;
+  border-radius: 5px;
+  height: 100vh;
+  width: 100%;
+  text-decoration: none;
+  box-shadow: 5px 5px 7px 5px rgb(217, 227, 230);
+}
+.formList h1 {
+  text-align: center;
+}
+
+.footer h2 {
+  color: black;
+  text-align: center;
+}
+
 .container {
   padding: 0 2rem;
 }
@@ -14,6 +38,7 @@
 
 .footer {
   display: flex;
+  bottom: 0;
   flex: 1;
   padding: 2rem 0;
   border-top: 1px solid #eaeaea;
@@ -103,10 +128,7 @@
   line-height: 1.5;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
+
 
 @media (max-width: 600px) {
   .grid {

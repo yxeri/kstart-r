@@ -1,0 +1,51 @@
+.wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.RHFContent {
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gold;
+  padding: 10%;
+  box-shadow: 2px 3px 4px 2px rgb(217, 227, 230);
+}
+
+.RHFContent h1 {
+  text-align: center;
+  padding-bottom: 15%;
+}
+
+.RHFContent input {
+  height: 24px;
+  margin-bottom: 3%;
+  display: flex;
+  border-radius: 5px;
+  border: 2px solid gray;
+  font-size: 16px;
+  padding: 5px;
+  height: auto;
+}
+
+.RHFContent label {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+  padding-bottom: 2%;
+  font-weight: 600;
+}
+
+.RHFContent span {
+  color: red;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+  padding-bottom: 3%;
+}
+
+.RHFOutput {
+  width: auto;
+}
