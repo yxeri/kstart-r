@@ -1,53 +1,49 @@
 import styles from "../styles/Navbar.module.css";
 import { useState } from "react";
 
-type SelectOption = {
-  label: string;
-  value: string;
-};
 
-type IDropdownProps = {
-  options: SelectOption[];
-  onChange: (value: SelectOption | undefined) => void;
-  value?: SelectOption;
-};
 
-export function Dropdown({ onChange, options }: IDropdownProps) {
+function Dropdown() {
   const [isOpen, setIsOpen] = useState(false);
   const [highlightedIndex, setHighlightedIndex] = useState(0);
 
-
-   
+  
+  const options = [
+    { label: "UserForm", value: "/UserForm", index: 1 },
+    { label: "NewForm", value: "/components/NewForm/Form", index: 2 },
+    { label: "Form", value: "/components/Form/Form", index: 3 },
+    { label: "RHForm", value: "/ReactHookForm/RHForm", index: 4 },
+  ];
   
   return (
     <div
-      onBlur={() => setIsOpen(false)}
       tabIndex={0}
-      onClick={() => setIsOpen((prev) => !prev)}
+      onClick={() => 
+      setIsOpen((prev) =>  !prev)}
       className={styles.container}
     >
       <h3>
         Forms <i className={styles.arrow}></i>
       </h3>
       <ul className={`${styles.options} ${isOpen ? styles.show : ""}`}>
-        {options.map((option, index) => (
+        {options.map((option, index) => {
+          console.log(option.value)
+          return(
           <li
-            onClick={(e) => {
-              e.stopPropagation();
-              setIsOpen(false);
-            }}
             onMouseEnter={() => setHighlightedIndex(index)}
-            key={option.value}
+            key={option.index}
             className={`${styles.option}
              ${index === highlightedIndex ? styles.highlighted : ""}`}
           >
-            <a href={option.value} >
+            <a href={option.value}>
               {option.label}
             </a>
-          </li>
-        ))}
+            
+          </li>)
+})}
       </ul>
     </div>
+
   );
 }
 

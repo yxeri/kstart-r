@@ -1,4 +1,4 @@
-export interface IformProps {
+export interface IFormValues {
   firstName: string;
   lastName: string;
   email: string;

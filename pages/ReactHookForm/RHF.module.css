@@ -1,20 +1,23 @@
 .wrap {
   display: flex;
   justify-content: center;
+  margin: 4%;
 }
 
 .RHFContent {
-  margin: 5%;
   display: flex;
   flex-direction: column;
   border: 1px solid gold;
-  padding: 10%;
+  padding: 8%;
   box-shadow: 2px 3px 4px 2px rgb(217, 227, 230);
+  max-width: 36%;
 }
 
-.RHFContent h1 {
+.wrap h1 {
   text-align: center;
-  padding-bottom: 15%;
+  position: absolute;
+  text-shadow: 1px 1px gold ;
+  padding-bottom: 4%;
 }
 
 .RHFContent input {
@@ -42,8 +45,8 @@
   display: flex;
   flex-direction: column;
   text-align: left;
-  align-items: flex-start;
   padding-bottom: 3%;
+  align-items: flex-start;
 }
 
 .RHFOutput {
