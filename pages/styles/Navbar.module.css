@@ -1,32 +1,33 @@
 .Navbar {
   padding: 2%;
-  
+
   width: 100vw;
   height: auto;
   border-bottom: 1px solid #f2f2f2;
 }
 
-.wrapper  {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    width: 100vw;
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  width: 100vw;
 }
 
 .Navbar h1 {
   background-image: linear-gradient(
     to left,
-    violet,
-    indigo,
-    blue,
-    green,
-    yellow,
-    orange,
-    red
+    rgb(238, 173, 238),
+    rgb(171, 115, 211),
+    rgb(134, 134, 215),
+    rgb(117, 193, 117),
+    rgb(203, 203, 95),
+    rgb(215, 171, 90),
+    rgb(222, 86, 86)
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: transform 0.4s;
+  font-weight: 800;
 }
 
 .Navbar h1:hover {

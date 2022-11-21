@@ -1,5 +1,5 @@
 import styles from "../styles/Navbar.module.css";
-import Dropdown from "./Dropdown";
+import Dropdown, { GameDropdown } from "./Dropdown";
 
 const Navbar = () => {
   const title = "Gamble";
@@ -12,9 +12,10 @@ const Navbar = () => {
         </a>
 
         <Dropdown />
+        <GameDropdown />
 
         <a
-          href="/Button"
+          href="/containers/Button"
           style={{
             color: "white",
             fontSize: "18px",
@@ -25,16 +26,6 @@ const Navbar = () => {
           }}
         >
           Button
-        </a>
-
-        <a
-          href="/TheGame"
-          style={{
-            fontSize: "18px",
-            fontWeight: "bold",
-          }}
-        >
-          The Game
         </a>
         <a
           href="/components/TodoList/TodoForm"

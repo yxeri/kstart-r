@@ -1,0 +1,93 @@
+.gameWrap {
+    width: auto;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 3rem;
+    padding: 2rem;
+    border: 1px solid black;
+  }
+  
+  .gameText {
+    box-shadow: 1px 4px 8px;
+    margin: 2rem;
+    text-shadow: 1px 2px gray;
+  }
+  
+  .turnsHeading {
+    font-size: 2rem; 
+    padding: 3rem;
+    text-align: center;
+  }
+  
+  .grid {
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(3, 1fr);
+    box-shadow: 2px 8px 10px rgb(153, 136, 136);
+  }
+  
+  .square {
+    width: 100px;
+    height: 100px;
+    font-size: 5rem;
+    text-align: center;
+    color: #e8e5e5;
+    border: 2px solid black;
+    background-color: aliceblue;
+  }
+  
+  .square:hover {
+    background-color: green;
+    opacity: 0.4;
+  }
+  
+  .square_o {
+    color: black;
+    background-color: white;
+  }
+  
+  .square_o:hover,
+  .square_x:hover {
+    background-color: red;
+    color: black;
+  }
+  
+  .square_x {
+    background-color: black;
+    color: white;
+  }
+  
+  .winner_o {
+    color: black;
+    background-color: white;
+    font-weight: 700;
+  }
+  
+  .winner_x {
+    color: white;
+    background-color: black;
+    font-weight: 700;
+  }
+  
+  .resetButton {
+    font-size: 1.5rem;
+    background-color: rgb(170, 193, 193);
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: white;
+    text-shadow: 1px 1px black;
+    margin: 1rem;
+    box-shadow: 1px 5px 10px rgb(193, 183, 183);
+    transition: transform 0.4s;
+  }
+  
+  .resetButton:hover {
+    background-color: rgb(67, 227, 67);
+    transform: scale(1.3);
+  }
+  

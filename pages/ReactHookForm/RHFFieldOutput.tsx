@@ -17,21 +17,28 @@ export const RHFFormFieldOutput = [
     name: "email",
     type: "email",
     label: "Email",
-    rules: { required: true, pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i, },
+    rules: {
+      required: true,
+      pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+    },
     message: "Enter valid Email!",
   },
   {
     name: "password",
     type: "password",
     label: "Password",
-    rules: { required: true, pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/ },
-    message: "Atleast 8 characters, include a number, upper and lowercase + special character!",
+    rules: {
+      required: true,
+      pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/,
+    },
+    message:
+      "Atleast 8 characters, include a number, upper and lowercase + special character!",
   },
-  {
+  /* {
     name: "confirmPassword",
     type: "password",
     label: "Confirm Password",
-    rules: { required: true, minLength: 8, pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/ },
+    rules: { required: true, pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/ },
     message: "Confirm password!",
-  }
+  }  */
 ];

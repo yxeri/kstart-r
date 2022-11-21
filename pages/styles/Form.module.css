@@ -1,116 +1,116 @@
 .formBackground {
-    display: flex;
-    background-color: rgb(231, 230, 229);
-    margin-top: 0%;
-    padding-top: 6%;
-    padding-bottom: 6%;
-    box-shadow: 5px 5px 7px 5px rgb(217, 227, 230);
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  background-color: rgb(231, 230, 229);
+  margin-top: 0%;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  box-shadow: 5px 5px 7px 5px rgb(217, 227, 230);
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
-    padding: 0 2rem;
+  padding: 0 2rem;
 }
 
 .formContainer {
-    display: flex;
-    flex-direction: column;
-    padding: 3rem;
-    background-color: white;
-    height: auto;
-    width: 50%;
-    margin-left: 5%;
-    padding-bottom: 5rem;
-    border: 1px solid black;
-    border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  background-color: white;
+  height: auto;
+  width: 50%;
+  margin-left: 5%;
+  padding-bottom: 5rem;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 .formContainer label {
-    padding-top: 2%;
-    font-weight: bold;
-    border-radius: 5px;
+  padding-top: 2%;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
 .formContainer input {
-    width: 100%;
-    display: block;
-    height: 30px;
+  width: 100%;
+  display: block;
+  height: 30px;
 }
 
 .formContainer .formSubmitBtn {
-    width: auto;
-    margin-top: 4%;
+  width: auto;
+  margin-top: 4%;
 }
 
 .formContainer h1 {
-    text-align: center;
+  text-align: center;
 }
 
 .formOutput {
-    display: flex;
-    flex-direction:column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .formOutput ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .formList {
-    display: flex;
-    flex-direction: inline;
-    padding: 5%;
-    justify-content: space-between;
-    border: 1px solid gray;
-    border-radius: 5px;
-    height: auto;
-    width: auto;
-    margin: 2.5%;
-    text-decoration: none;
-    box-shadow: 5px 5px 7px 5px rgb(217, 227, 230);
-    margin-left: 5%;
-} 
+  display: flex;
+  flex-direction: inline;
+  padding: 5%;
+  justify-content: space-between;
+  border: 1px solid gray;
+  border-radius: 5px;
+  height: auto;
+  width: auto;
+  margin: 2.5%;
+  text-decoration: none;
+  box-shadow: 5px 5px 7px 5px rgb(217, 227, 230);
+  margin-left: 5%;
+}
 
 .formList ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .listItems {
-    display: flex;
-    flex-direction: column;
-    padding: 8%;
-    border: 1px solid gray;
-    border-radius: 5px;
-    height: auto;
-    width: auto;
-    margin-bottom: 4%;
-    text-decoration: none;
-    box-shadow: 5px 5px 7px 5px rgb(217, 227, 230);
-} 
+  display: flex;
+  flex-direction: column;
+  padding: 8%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  height: auto;
+  width: auto;
+  margin-bottom: 4%;
+  text-decoration: none;
+  box-shadow: 5px 5px 7px 5px rgb(217, 227, 230);
+}
 
-.errorMessage{
-    margin:0px;
-    margin-bottom:10px;
-    color:red;
+.errorMessage {
+  margin: 0px;
+  margin-bottom: 10px;
+  color: red;
 }
 
 .form .errorMessage span {
-    color: red;
+  color: red;
 }
 
 .invalid {
-    visibility: visible;
+  visibility: visible;
 }
 
 .valid {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 .form span {
-    font-size: 12px;
-    padding: 3px;
-    color: red;
+  font-size: 12px;
+  padding: 3px;
+  color: red;
 }
 /*
 .form input:invalid ~ span {

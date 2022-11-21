@@ -1,7 +1,6 @@
 import styles from "../../styles/Form.module.css";
 import React, { useState } from "react";
 import NewFormData from "./NewFormData";
-import Navbar from "../Navbar";
 
 interface FormProps {
   firstName: string;
@@ -191,7 +190,6 @@ const Form: React.FC<FormProps> = () => {
 
   return (
     <>
-      <Navbar />
       <div className={styles.formBackground}>
         <div className={styles.formContainer}>
           <h1>New Form</h1>

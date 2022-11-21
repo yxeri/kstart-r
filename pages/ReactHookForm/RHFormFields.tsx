@@ -8,7 +8,7 @@ interface IFormFields {
     message: string;
     rules: {
       required: boolean;
-      pattern: RegExp; /* validate?: */
+      pattern: RegExp;
       minLength?: number | undefined;
     };
   };
@@ -17,13 +17,12 @@ interface IFormFields {
 export const RHFormFields = ({ fields }: IFormFields) => {
   const {
     register,
-    //watch,
     formState: { errors },
   } = useFormContext();
 
   return (
     <div>
-      <label htmlFor="">{fields.label}</label>
+      <label htmlFor="label">{fields.label}</label>
       <input
         {...register(fields.name, {
           minLength: fields.rules.minLength,
@@ -31,8 +30,7 @@ export const RHFormFields = ({ fields }: IFormFields) => {
           required: fields.rules.required,
         })}
         type={fields.type}
-
-      /> 
+      />
       {errors[fields.name] && <span>{fields.message}</span>}
     </div>
   );
