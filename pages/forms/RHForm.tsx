@@ -4,16 +4,21 @@ import {
   SubmitHandler,
   FieldValues,
 } from "react-hook-form";
-import { useState } from "react";
+//import { useState } from "react";
 import styles from "../../styles/forms/RHF.module.css";
 import { IFormValues } from "../../components/Forms/ReactHookForm/RHFinterface";
 import { RHFFormFieldOutput } from "../../components/Forms/ReactHookForm/RHFFieldOutput";
 import { RHFormFields } from "../../components/Forms/ReactHookForm/RHFormFields";
 import { RHFConfirmPassword } from "../../components/Forms/ReactHookForm/RHFConfirmPassword";
+import { useRecoilValue, useRecoilState } from "recoil";
+import userListState from "../../atoms/userListState";
+import RHFUserList from "../../components/Forms/ReactHookForm/RHFUserList";
 
 const RHForm = () => {
   const methods = useForm<IFormValues>({ mode: "onBlur" });
-  const [user, setUser] = useState<IFormValues[]>([]);
+  //const [user, setUser] = useState<IFormValues[]>([]);
+  const users = useRecoilValue(userListState);
+  const [user, setUser] = useRecoilState(userListState);
 
   const onSubmit: SubmitHandler<FieldValues> = (data: any) => {
     setUser((user) => [...user, data]);
@@ -74,6 +79,11 @@ const RHForm = () => {
       </div>
       <div className={styles.RHFOutput}>
         <ul>{userList}</ul>
+      </div>
+      <div className={styles.RHFOutput}>
+        {users.map((user, index) => (
+          <RHFUserList key={index} user={user} />
+        ))}
       </div>
     </>
   );

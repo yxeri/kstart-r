@@ -36,6 +36,15 @@ const Navbar = () => {
         >
           Todolist
         </a>
+        <a
+          href="/stitches/Stitches"
+          style={{
+            fontSize: "18px",
+            fontWeight: "bold",
+          }}
+        >
+          Stitches
+        </a>
       </div>
     </nav>
   );
