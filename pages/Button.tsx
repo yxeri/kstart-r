@@ -1,4 +1,4 @@
-import styles from "../styles/Button.module.css";
+import styles from "../components/Button/Button.module.css";
 import BaseButton from "../components/Button/BaseButton"
 
 const Button = () => {

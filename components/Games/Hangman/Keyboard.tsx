@@ -1,4 +1,4 @@
-import styles from "../../../styles/games/Hangman.module.css";
+import styles from "./css/Hangman.module.css";
 
 const KEYS = [
   "a",
@@ -43,13 +43,7 @@ export default function Keyboard({
   addGuessedLetter,
 }: KeyboardProps) {
   return (
-    <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: "repeat(auto-fit, minmax(75px, 1fr))",
-        gap: ".5rem",
-      }}
-    >
+    <div className={styles.Keyboard}>
       {KEYS.map((key) => {
         const isActive = activLetters.includes(key);
         const isInactive = inactivLetters.includes(key);

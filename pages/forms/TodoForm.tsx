@@ -3,7 +3,7 @@ import TodoInput from "../../components/Forms/TodoList/TodoInput";
 import TodoList from "../../components/Forms/TodoList/TodoList";
 import { ITodo } from "../../components/Forms/TodoList/TodoInterfaces";
 import { DragDropContext, DropResult } from "react-beautiful-dnd";
-import styles from '../../styles/forms/TodoList.module.css'
+import styles from '../../components/Forms/TodoList/css/TodoList.module.css'
 
 interface todoProps {
   id: number;

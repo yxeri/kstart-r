@@ -1,0 +1,17 @@
+.Wrap {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0%;
+  background-color: rgb(240, 234, 226);
+}
+
+.Title {
+  text-align: center;
+  padding: 2.5%;
+}
+
+@media (min-width: 768px) {
+  .Title {
+   font-size: 48px;
+  }
+}

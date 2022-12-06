@@ -3,7 +3,7 @@ import { AiFillEdit, AiFillDelete } from "react-icons/ai";
 import { useState, useRef, useEffect } from "react";
 import { MdDone } from "react-icons/md";
 import { Draggable } from "react-beautiful-dnd";
-import styles from "../../../styles/forms/TodoList.module.css";
+import styles from "./css/TodoList.module.css";
 
 
 const SingleTodo: React.FC<{

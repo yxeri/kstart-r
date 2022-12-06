@@ -1,5 +1,5 @@
 import Game from "../../components/Games/StarGame/Game";
-import styles from "../../styles/games/StarGame.module.css";
+import styles from "../../components/Games/StarGame/css/StarGame.module.css";
 import { useState } from "react";
 
 const StarGame = () => {

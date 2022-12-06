@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import words from "../../data/WordList.json";
-import styles from "../../styles/games/HangMan.module.css";
+import styles from "../../components/Games/Hangman/css/Hangman.module.css";
 import HangmanDrawing from "../../components/Games/Hangman/HangmanDrawing";
 import HangmanWord from "../../components/Games/Hangman/HangmanWord";
 import Keyboard from "../../components/Games/Hangman/Keyboard";

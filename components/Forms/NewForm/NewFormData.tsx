@@ -1,4 +1,4 @@
-import styles from "../../../styles/forms/Form.module.css"
+import styles from "../css/Form.module.css"
 
 
 const NewFormData = (props: any) => {

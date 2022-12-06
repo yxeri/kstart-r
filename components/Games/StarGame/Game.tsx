@@ -3,7 +3,7 @@ import utils from "./math-utils";
 import StarsDisplay from "./StarsDisplay";
 import PlayNumber from "./PlayNumber";
 import PlayAgain from "./PlayAgain";
-import styles from '../../../styles/games/StarGame.module.css'
+import styles from './css/StarGame.module.css'
 
 
 

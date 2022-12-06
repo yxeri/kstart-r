@@ -1,50 +1,40 @@
-import styles from "../../styles/Navbar.module.css";
-import Dropdown, { GameDropdown } from "./Dropdown";
+import styles from "./Navbar.module.css";
+// import Dropdown, { GameDropdown } from "./Dropdown";
+import StitchesButton from "../../components/stitches/StitchesButton";
+import RadixDropdown from "./Radix/DropdownMenu";
+import NavMenu from "./Radix/NavigationMenu";
+import { StyledButton } from "./Radix/css/StyledButton";
+import { HamburgerMenuIcon } from "@radix-ui/react-icons";
+import { useState } from "react";
 
 const Navbar = () => {
   const title = "Gamble";
+  const [isOpen, setIsOpen] = useState(false);
 
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+  };
+  console.log(isOpen);
+  
   return (
     <nav className={styles.Navbar}>
-      <div className={styles.wrapper}>
+      <div className={styles.Wrapper}>
         <a href="/">
           <h1>{title}</h1>
         </a>
+        {/* <RadixDropdown /> */}
 
-        <Dropdown />
-        <GameDropdown />
 
-        <a
-          href="/Button"
-          style={{
-            color: "white",
-            fontSize: "18px",
-            backgroundColor: "lightgray",
-            boxShadow: "1px 1px 2px 2px rgb(224, 235, 238)",
-            borderRadius: "8px",
-            height: "32px",
-          }}
+        <StyledButton
+          css={{ "@bp1": { display: "none" } }}
+          onClick={handleClick}
         >
-          Button
-        </a>
-        <a
-          href="/forms/TodoForm"
-          style={{
-            fontSize: "18px",
-            fontWeight: "bold",
-          }}
-        >
-          Todolist
-        </a>
-        <a
-          href="/stitches/Stitches"
-          style={{
-            fontSize: "18px",
-            fontWeight: "bold",
-          }}
-        >
-          Stitches
-        </a>
+          <HamburgerMenuIcon />
+        </StyledButton>
+
+        <NavMenu isOpen={isOpen} />
+
+        <StitchesButton />
       </div>
     </nav>
   );

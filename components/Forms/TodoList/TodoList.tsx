@@ -1,5 +1,5 @@
 import SingleTodo from "./SingleTodo";
-import styles from "../../../styles/forms/TodoList.module.css";
+import styles from "./css/TodoList.module.css";
 import { ITodo } from "./TodoInterfaces";
 import { Droppable } from "react-beautiful-dnd";
 

@@ -1,4 +1,4 @@
-import styles from "../../styles/forms/Form.module.css";
+import styles from "../../components/Forms/css/Form.module.css";
 import React, { useState } from "react";
 import NewFormData from "../../components/Forms/NewForm/NewFormData";
 

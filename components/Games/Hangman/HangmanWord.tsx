@@ -1,3 +1,5 @@
+import styles from './css/Hangman.module.css'
+
 type HangmanWordProps = {
     guessedLetters: string[];
     wordToGuess: string;
@@ -7,16 +9,7 @@ type HangmanWordProps = {
 export default function HangmanWord( { guessedLetters, wordToGuess, reveal = false}: HangmanWordProps) {
  
   return (
-    <div
-      style={{
-        display: "flex",
-        gap: ".25em",
-        fontSize: "6rem",
-        fontWeight: "bold",
-        textTransform: "uppercase",
-        fontFamily: "monospace",
-      }}
-    >
+    <div className={styles.Characters} >
       {wordToGuess.split("").map((letter, index) => (
         <span style={{ borderBottom: ".1em solid black" }} key={index}>
           <span

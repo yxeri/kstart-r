@@ -1,4 +1,4 @@
-import styles from '../../../styles/games/StarGame.module.css'
+import styles from './css/StarGame.module.css'
 
 const PlayAgain = props => (
     

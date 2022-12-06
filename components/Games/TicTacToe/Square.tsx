@@ -1,4 +1,4 @@
-import styles from "../../../styles/games/TicTacToe.module.css";
+import styles from "./css/TicTacToe.module.css";
 
 export type PlayerProps = ( 'X' | 'O' | 'both' | null );
 

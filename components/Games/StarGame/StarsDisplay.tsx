@@ -1,6 +1,6 @@
 import React from "react";
 import utils from "./math-utils";
-import styles from '../../../styles/games/StarGame.module.css'
+import styles from './css/StarGame.module.css'
 
 
 

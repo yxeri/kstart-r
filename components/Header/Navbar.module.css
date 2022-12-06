@@ -1,12 +1,10 @@
 .Navbar {
-  padding: 2%;
-
   width: 100vw;
   height: auto;
   border-bottom: 1px solid #f2f2f2;
 }
 
-.wrapper {
+.Wrapper {
   display: flex;
   flex-direction: row;
   align-items: baseline;
@@ -36,8 +34,8 @@
 
 .Navbar a {
   text-decoration: none;
-  padding: 5px;
-  margin-left: 16px;
+  padding-left: 15px;
+  padding-right: 16px;
 }
 
 .Navbar a:hover {

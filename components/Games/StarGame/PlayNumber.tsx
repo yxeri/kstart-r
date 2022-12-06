@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../../styles/games/StarGame.module.css";
+import styles from "./css/StarGame.module.css";
 
 const PlayNumber: React.FC<ColorProps> = (props: any | string) => (
   <button

@@ -2,9 +2,8 @@
   display: flex;
   background-color: rgb(231, 230, 229);
   margin-top: 0%;
-  padding-top: 6%;
-  padding-bottom: 6%;
-  box-shadow: 5px 5px 7px 5px rgb(217, 227, 230);
+  padding-top: 4%;
+  padding-bottom: 4%;
   align-items: center;
   justify-content: center;
 }
@@ -19,15 +18,15 @@
   padding: 3rem;
   background-color: white;
   height: auto;
-  width: 50%;
-  margin-left: 5%;
+  width: 100%;
+  margin: 2.5%;
   padding-bottom: 5rem;
   border: 1px solid black;
   border-radius: 5px;
 }
 
 .formContainer label {
-  padding-top: 2%;
+  padding-top: 8%;
   font-weight: bold;
   border-radius: 5px;
 }
@@ -50,43 +49,45 @@
 .formOutput {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
+  border-bottom: 1px dotted black;
 }
 
 .formOutput ul {
   list-style-type: none;
+   padding-left: 15px; 
+  
 }
 
 .formList {
   display: flex;
   flex-direction: inline;
-  padding: 5%;
-  justify-content: space-between;
   border: 1px solid gray;
   border-radius: 5px;
   height: auto;
   width: auto;
   margin: 2.5%;
   text-decoration: none;
-  box-shadow: 5px 5px 7px 5px rgb(217, 227, 230);
-  margin-left: 5%;
 }
 
 .formList ul {
   list-style-type: none;
 }
 
+/*user form*/
 .listItems {
   display: flex;
   flex-direction: column;
-  padding: 8%;
-  border: 1px solid gray;
-  border-radius: 5px;
+  padding: 4%;
+  border-bottom: 1px dotted black;
   height: auto;
-  width: auto;
-  margin-bottom: 4%;
+  width: 100%;
+  margin: 0%;
   text-decoration: none;
-  box-shadow: 5px 5px 7px 5px rgb(217, 227, 230);
+}
+
+.formOutput p {
+  padding-top: 0%;
 }
 
 .errorMessage {
@@ -112,8 +113,51 @@
   padding: 3px;
   color: red;
 }
-/*
-.form input:invalid ~ span {
-    display: block;
+
+@media (min-width: 768px) {
+  .formBackground {
+    padding-top: 6%;
+    padding-bottom: 6%;
+    box-shadow: 5px 5px 7px 5px rgb(217, 227, 230);
+  }
+
+  .formContainer {
+    width: 40%;
+    margin-left: 5%;
+  }
+
+  .formContainer label {
+    padding-top: 4%;
+  }
+
+  .formList {
+    padding: 5%;
+    justify-content: space-between;
+    border: 1px solid gray;
+    box-shadow: 5px 5px 7px 5px rgb(217, 227, 230);
+    margin-left: 5%;
+  }
+
+  .formOutput {
+    align-items: center;
+  }
+
+  .formContainer input[type="submit" i] {
+   position: relative;
+   left: 40%;
+   right: 40%
+  }
+  
+  /*user form*/
+  .listItems {
+    padding: 8%;
+    min-width: 400px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    border-bottom: none;
+    margin-bottom: 4%;
+    text-decoration: none;
+    box-shadow: 5px 5px 7px 5px rgb(217, 227, 230);
+  }
+
 }
-*/

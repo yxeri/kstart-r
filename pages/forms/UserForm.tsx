@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "../../styles/forms/Form.module.css";
+import styles from "../../components/Forms/css/Form.module.css";
 
 interface UserFormProps {
   firstName: string;

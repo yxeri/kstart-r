@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Square, { PlayerProps } from "../../components/Games/TicTacToe/Square";
-import styles from "../../styles/games/TicTacToe.module.css";
+import styles from "../../components/Games/TicTacToe/css/TicTacToe.module.css";
 
 function TicTacToeBoard() {
   const [squares, setSquares] = useState(Array(9).fill(null));

@@ -1,6 +1,6 @@
 import React, { useState, ChangeEvent } from "react";
 import FormInput from "../../components/Forms/Form/FormInput";
-import styles from "../../styles/forms/Form.module.css";
+import styles from "../../components/Forms/css/Form.module.css";
 
 interface UserProps {
   firstName: string;

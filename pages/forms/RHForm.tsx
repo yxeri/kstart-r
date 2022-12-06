@@ -5,7 +5,7 @@ import {
   FieldValues,
 } from "react-hook-form";
 //import { useState } from "react";
-import styles from "../../styles/forms/RHF.module.css";
+import styles from "../../components/Forms/ReactHookForm/css/RHF.module.css";
 import { IFormValues } from "../../components/Forms/ReactHookForm/RHFinterface";
 import { RHFFormFieldOutput } from "../../components/Forms/ReactHookForm/RHFFieldOutput";
 import { RHFormFields } from "../../components/Forms/ReactHookForm/RHFormFields";
@@ -78,7 +78,7 @@ const RHForm = () => {
         </div>
       </div>
       <div className={styles.RHFOutput}>
-        <ul>{userList}</ul>
+        {userList}
       </div>
       <div className={styles.RHFOutput}>
         {users.map((user, index) => (
